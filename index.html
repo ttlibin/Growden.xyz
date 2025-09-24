@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Growden.io: Free Play Grow A Garden Online | Ultimate Growden.io Guide</title>
+	<meta name="description" content="Discover Growden.io, the free-to-play Grow A Garden experience. Learn what Growden.io is, features, how to play, tips, and FAQ to grow faster and unlock pets.">
+	<link rel="canonical" href="https://growden.xyz/">
+	<meta name="robots" content="index, follow">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Growden.io: Free Play Grow A Garden Online | Ultimate Growden.io Guide">
+	<meta property="og:description" content="Discover Growden.io, the free-to-play Grow A Garden experience. Learn what Growden.io is, features, how to play, tips, and FAQ to grow faster and unlock pets.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://growden.xyz/">
+	<meta property="og:image" content="https://growden.xyz/og-image.jpg">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Growden.io: Free Play Grow A Garden Online | Ultimate Growden.io Guide">
+	<meta name="twitter:description" content="Discover Growden.io, the free-to-play Grow A Garden experience. Learn what Growden.io is, features, how to play, tips, and FAQ to grow faster and unlock pets.">
+	<meta name="twitter:image" content="https://growden.xyz/og-image.jpg">
+
+	<!-- Performance -->
+	<link rel="dns-prefetch" href="//growden.io">
+	<link rel="preconnect" href="https://growden.io" crossorigin>
+
+	<!-- Tailwind CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		// Tailwind dark mode via class
+		tailwind.config = { darkMode: 'class' };
+		// Respect user preference + persist toggle
+		(function() {
+			const ls = localStorage.getItem('theme');
+			const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (ls === 'dark' || (!ls && systemDark)) document.documentElement.classList.add('dark');
+		})();
+	</script>
+
+	<!-- FAQ Schema -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "FAQPage",
+	  "mainEntity": [
+		{
+		  "@type": "Question",
+		  "name": "Do my plants grow when I’m offline in Growden.io?",
+		  "acceptedAnswer": { "@type": "Answer", "text": "Yes. Growden.io supports offline growth, so you’ll often return to harvest-ready plants and possible mutations." }
+		},
+		{
+		  "@type": "Question",
+		  "name": "How do I unlock pets in Growden.io?",
+		  "acceptedAnswer": { "@type": "Answer", "text": "Earn 50,000 coins in Growden.io to buy pet eggs. Wait about one hour for pets like dogs, rabbits, capybaras, dinosaurs, or bees to hatch." }
+		},
+		{
+		  "@type": "Question",
+		  "name": "When do mutations occur in Growden.io?",
+		  "acceptedAnswer": { "@type": "Answer", "text": "Mutations in Growden.io happen during weather events such as Daytime, Nighttime, Desert, Rain, and Frosty, with higher chances the longer you stay." }
+		},
+		{
+		  "@type": "Question",
+		  "name": "How often is Growden.io updated?",
+		  "acceptedAnswer": { "@type": "Answer", "text": "Every few days, Growden.io adds new seeds, weather-driven content, and gameplay enhancements." }
+		},
+		{
+		  "@type": "Question",
+		  "name": "Can I interact with other players in Growden.io?",
+		  "acceptedAnswer": { "@type": "Answer", "text": "Yes. Growden.io supports gifting now, with a trading system planned to expand social play." }
+		}
+	  ]
+	}
+	</script>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-gray-200">
+	<header class="border-b border-slate-200/70 dark:border-slate-800">
+		<div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+			<a href="#" class="font-semibold tracking-tight text-xl">
+				Growden.xyz
+			</a>
+			<nav class="hidden md:flex items-center gap-6 text-sm">
+				<a href="#play" class="hover:text-green-600 dark:hover:text-cyan-300">Play</a>
+				<a href="#what-is" class="hover:text-green-600 dark:hover:text-cyan-300">What Is</a>
+				<a href="#features" class="hover:text-green-600 dark:hover:text-cyan-300">Features</a>
+				<a href="#how-to-play" class="hover:text-green-600 dark:hover:text-cyan-300">How to Play</a>
+				<a href="#why" class="hover:text-green-600 dark:hover:text-cyan-300">Why</a>
+				<a href="#faq" class="hover:text-green-600 dark:hover:text-cyan-300">FAQ</a>
+			</nav>
+			<div class="flex items-center gap-3">
+				<a href="#play" class="inline-flex rounded-md bg-green-600 px-4 py-2 text-white text-sm font-semibold shadow-sm hover:bg-green-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-600 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-950 transition">
+					Play Now
+				</a>
+				<button id="themeToggle" aria-label="Toggle theme" class="rounded-md px-3 py-2 text-sm border border-slate-200/80 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-900 transition">
+					Light/Dark
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- Play (iframe) - moved to top under nav -->
+		<section id="play" class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12">
+			<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-center flex items-center justify-center gap-2">🎮 <span>Play Growden.io</span></h2>
+			<p class="mt-3 text-slate-700 dark:text-gray-300">Play Growden.io directly in your browser. If the embed is blocked by your browser, open it in a new tab.</p>
+			<div class="mt-6 relative w-full rounded-xl border border-slate-200/80 dark:border-slate-800 overflow-hidden bg-black">
+				<!-- Skeleton placeholder -->
+				<div id="game-skeleton" class="absolute inset-0 flex items-center justify-center bg-slate-900/60 text-gray-200 text-sm">
+					<div class="animate-pulse flex flex-col items-center gap-3">
+						<div class="h-8 w-8 rounded-full bg-slate-200/30"></div>
+						<p class="text-gray-200/80">Loading Growden.io…</p>
+					</div>
+				</div>
+				<!-- 16:9 ratio without plugin -->
+				<div class="relative pt-[56.25%]">
+					<iframe
+						src="https://growden.io"
+						title="Growden.io Online Game"
+						class="absolute inset-0 h-full w-full"
+						loading="lazy"
+						referrerpolicy="no-referrer"
+						allowfullscreen
+						onload="document.getElementById('game-skeleton')?.classList.add('hidden')"
+					></iframe>
+				</div>
+			</div>
+
+		</section>
+		<!-- Hero -->
+		<section class="relative overflow-hidden">
+			<div class="absolute inset-0 bg-gradient-to-b from-green-50 to-slate-50 dark:from-slate-900 dark:to-blue-900 pointer-events-none"></div>
+			<div class="relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+				<div class="grid lg:grid-cols-12 gap-10 items-center">
+					<div class="lg:col-span-7">
+						<h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+							Growden.io: Free Play Grow A Garden Online
+						</h1>
+						<p class="mt-5 text-lg text-slate-700 dark:text-gray-300 max-w-2xl">
+							Growden.io is a vibrant, free-to-play Grow A Garden experience with weather events, rare mutations, pets, and social gifting. Start your Growden.io journey and build a dream garden online.
+						</p>
+						<div class="mt-8 flex flex-wrap items-center gap-3">
+							<a href="#play" class="inline-flex rounded-md bg-green-600 px-5 py-3 text-white font-semibold shadow hover:bg-green-700 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-950">
+								Play Growden.io Now
+							</a>
+							<a href="#what-is" class="inline-flex rounded-md border border-slate-200/80 dark:border-slate-800 px-5 py-3 font-semibold hover:bg-slate-100 dark:hover:bg-slate-900 transition">
+								Learn the Growden.io Guide
+							</a>
+						</div>
+					</div>
+					<div class="lg:col-span-5">
+						<div class="rounded-xl border border-slate-200/80 dark:border-slate-800 bg-white/80 dark:bg-slate-900/70 backdrop-blur p-6">
+							<p class="text-sm text-slate-600 dark:text-gray-300">
+								Growden.io highlights: Silver/Golden/Rainbow/BIG mutations, Day/Night/Desert/Rain/Frosty weather, pets, equipment, and offline growth with frequent updates.
+							</p>
+							<ul class="mt-4 grid grid-cols-2 gap-3 text-sm">
+								<li class="flex items-center gap-2"><span class="inline-block h-2 w-2 rounded-full bg-green-600"></span> Rare Mutations</li>
+								<li class="flex items-center gap-2"><span class="inline-block h-2 w-2 rounded-full bg-blue-600"></span> Dynamic Weather</li>
+								<li class="flex items-center gap-2"><span class="inline-block h-2 w-2 rounded-full bg-amber-600"></span> Pets & Gear</li>
+								<li class="flex items-center gap-2"><span class="inline-block h-2 w-2 rounded-full bg-emerald-600"></span> Offline Growth</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Play (iframe) -->
+
+
+		<!-- What Is -->
+		<section id="what-is" class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12">
+		<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-center">🌱 What Is Growden.io?</h2>
+			<p class="mt-4 max-w-3xl text-slate-700 dark:text-gray-300">
+				Growden.io is a multiplayer farming simulator where you build your dream garden by purchasing seeds, planting them on soil plots, and harvesting for coins.
+				Growden.io stands out with dynamic weather cycles and rare mutations—Silver, Golden, Rainbow, and BIG—that make your plants unique and more valuable.
+				With Growden.io, your efforts compound over time, encouraging both casual sessions and long-term mastery.
+			</p>
+		<h3 class="mt-8 text-xl font-semibold text-center">🌿 Growden.io Overview and Community-Driven Growth</h3>
+			<p class="mt-3 max-w-3xl text-slate-700 dark:text-gray-300">
+				Growden.io emphasizes community. Gift seeds and plants to friends, compare gardens, and prepare for upcoming trading features.
+				Because Growden.io updates regularly, you’ll see new seeds, events, and quality-of-life improvements, keeping the Growden.io experience fresh.
+			</p>
+		</section>
+
+		<!-- Features -->
+		<section id="features" class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12">
+		<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-center flex items-center justify-center gap-2">✨ <span>Growden.io Game Features You’ll Love</span></h2>
+			<div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+				<div class="rounded-lg border border-slate-200/80 dark:border-slate-800 p-6">
+					<h3 class="font-semibold text-lg text-center">🌦️ Weather Events and Rare Mutations in Growden.io</h3>
+					<p class="mt-2 text-slate-700 dark:text-gray-300">
+						Weather rotates in Growden.io—Daytime, Nighttime, Desert, Rain, and Frosty—every few minutes. During these events, Growden.io increases the chance of rare plant mutations. Silver, Golden, Rainbow, and BIG forms enhance coin yield and visuals.
+					</p>
+				</div>
+				<div class="rounded-lg border border-slate-200/80 dark:border-slate-800 p-6">
+					<h3 class="font-semibold text-lg text-center">🐾 Pets, Gear, and Progression in Growden.io</h3>
+					<p class="mt-2 text-slate-700 dark:text-gray-300">
+						Earn 50,000 coins in Growden.io to purchase pet eggs and hatch dogs, rabbits, capybaras, dinosaurs, and bees. Equipment—sprinklers, watering cans—boosts efficiency so your garden scales smoothly.
+					</p>
+				</div>
+				<div class="rounded-lg border border-slate-200/80 dark:border-slate-800 p-6">
+					<h3 class="font-semibold text-lg text-center">🌾 Seeds → Crops → Coins Loop</h3>
+					<p class="mt-2 text-slate-700 dark:text-gray-300">
+						Shop for seeds, plant on brown plots, harvest for profits, and reinvest in Growden.io. The loop stays engaging with weather, mutations, pets, and frequent updates.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- How to Play -->
+		<section id="how-to-play" class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12">
+		<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-center">🕹️ How to Play Growden.io (Step-by-Step)</h2>
+			<div class="mt-6 grid lg:grid-cols-2 gap-8">
+				<div>
+					<ol class="list-decimal pl-5 space-y-2 text-slate-700 dark:text-gray-300">
+						<li>🛒 Buy seeds in the Growden.io shop.</li>
+						<li>🌱 Equip seeds and click brown soil plots to plant.</li>
+						<li>🌤️ Let plants grow in Growden.io’s dynamic world.</li>
+						<li>🧺 Harvest to earn coins and reinvest.</li>
+						<li>🐾 Use profits in Growden.io to buy pet eggs and gear.</li>
+					</ol>
+				</div>
+				<div>
+					<h3 class="font-semibold text-lg text-center">🎯 Controls, Tips, and Early Strategy for Growden.io</h3>
+					<ul class="mt-3 space-y-1 text-slate-700 dark:text-gray-300">
+						<li>🎮 <strong>WASD / Arrow Keys</strong>: Move</li>
+						<li>🪜 <strong>Space</strong>: Jump</li>
+						<li>🖐️ <strong>E</strong>: Interact / pick up</li>
+						<li>🖱️ <strong>Right Mouse (hold)</strong>: Move camera</li>
+					</ul>
+					<p class="mt-3 text-slate-700 dark:text-gray-300">
+						Early on, focus on consistent planting in Growden.io, reinvest harvest coins into seeds and key equipment, and stay online during weather events. Chase rare mutations and time pet egg hatching with your sessions.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Why -->
+		<section id="why" class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12">
+		<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-center">🌟 Why Choose Growden.io Over Other Farming Games</h2>
+			<div class="mt-6 grid sm:grid-cols-2 gap-6">
+				<div class="rounded-lg border border-slate-200/80 dark:border-slate-800 p-6">
+					<h3 class="font-semibold text-lg text-center">⏱️ Offline Growth and Frequent Updates in Growden.io</h3>
+					<p class="mt-2 text-slate-700 dark:text-gray-300">
+						Even when you log off, Growden.io keeps your garden growing. Return to matured plants and potential mutations. Regular updates add weather events, seeds, and features so Growden.io always feels fresh.
+					</p>
+				</div>
+				<div class="rounded-lg border border-slate-200/80 dark:border-slate-800 p-6">
+					<h3 class="font-semibold text-lg text-center">🤝 Community Features and Trading Roadmap</h3>
+					<p class="mt-2 text-slate-700 dark:text-gray-300">
+						Gift seeds and plants in Growden.io today and get ready for trading. Social play creates long-term motivation beyond solo farming.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ -->
+		<section id="faq" class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12">
+		<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-center">❓ Growden.io FAQ</h2>
+			<div class="mt-6 grid lg:grid-cols-2 gap-8">
+				<div>
+					<h3 class="font-semibold">Do my plants grow when I’m offline in Growden.io?</h3>
+					<p class="text-slate-700 dark:text-gray-300 mt-1">Yes. Growden.io supports offline growth, so you’ll often return to harvest-ready plants and possible mutations.</p>
+
+					<h3 class="font-semibold mt-6">How do I unlock pets in Growden.io?</h3>
+					<p class="text-slate-700 dark:text-gray-300 mt-1">Earn 50,000 coins in Growden.io to buy pet eggs. Wait about one hour to hatch dogs, rabbits, capybaras, dinosaurs, or bees.</p>
+
+					<h3 class="font-semibold mt-6">When do mutations occur in Growden.io?</h3>
+					<p class="text-slate-700 dark:text-gray-300 mt-1">During weather events—Daytime, Nighttime, Desert, Rain, and Frosty—with higher chances when you play longer sessions.</p>
+				</div>
+				<div>
+					<h3 class="font-semibold">How often is Growden.io updated?</h3>
+					<p class="text-slate-700 dark:text-gray-300 mt-1">Every few days, Growden.io adds new seeds, weather-driven content, and gameplay enhancements.</p>
+
+					<h3 class="font-semibold mt-6">Can I interact with other players in Growden.io?</h3>
+					<p class="text-slate-700 dark:text-gray-300 mt-1">Yes. Growden.io supports gifting now, with a trading system planned to expand social play.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="border-t border-slate-200/70 dark:border-slate-800">
+		<div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-10 text-sm">
+			<div class="flex flex-wrap items-center justify-between gap-4">
+				<p class="text-slate-600 dark:text-gray-400">
+					© 2025 Growden.xyz. Growden.xyz is an independent website and not affiliated with Growden.io.
+				</p>
+				<nav class="flex items-center gap-5">
+					<a href="#" class="hover:text-green-600 dark:hover:text-cyan-300">Privacy</a>
+					<a href="#" class="hover:text-green-600 dark:hover:text-cyan-300">Terms</a>
+					<a href="#" class="hover:text-green-600 dark:hover:text-cyan-300">Contact</a>
+				</nav>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		// Theme toggle button
+		document.getElementById('themeToggle')?.addEventListener('click', () => {
+			const el = document.documentElement;
+			const isDark = el.classList.toggle('dark');
+			localStorage.setItem('theme', isDark ? 'dark' : 'light');
+		});
+	</script>
+</body>
+</html>
+
+
